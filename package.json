@@ -10,7 +10,7 @@
         "ch5",
         "CrComLib"
     ],
-    "main": "build_bundles/cjs/cr-com-lib.js",
+    "main": "build_bundles/lib-esm/index.js",
     "module": "build_bundles/lib-esm/index.js",
     "types": "build_bundles/lib-esm/index.d.ts",
     "type": "module",
