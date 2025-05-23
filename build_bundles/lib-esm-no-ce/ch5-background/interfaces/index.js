@@ -1,3 +1,0 @@
-export * from './t-ch5-background';
-export * from "./i-ch5-background-attributes";
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtYmFja2dyb3VuZC9pbnRlcmZhY2VzL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9BLGNBQWMsb0JBQW9CLENBQUM7QUFDbkMsY0FBYywrQkFBK0IsQ0FBQyJ9

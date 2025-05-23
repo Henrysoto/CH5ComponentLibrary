@@ -1,3 +1,0 @@
-export * from './i-ch5-spinner-attributes';
-export * from './t-ch5-spinner';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtc3Bpbm5lci9pbnRlcmZhY2VzL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9BLGNBQWMsNEJBQTRCLENBQUM7QUFDM0MsY0FBYyxpQkFBaUIsQ0FBQyJ9

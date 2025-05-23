@@ -1,8 +1,0 @@
-import { Ch5StandardAnimation } from './ch5-standard-animation';
-export class Ch5AnimationFactory {
-    getAnimation(duration, easeMode, wrapper) {
-        const animationInstance = new Ch5StandardAnimation(duration, easeMode, wrapper);
-        return animationInstance;
-    }
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2g1LWFuaW1hdGlvbi1mYWN0b3J5LmpzIiwic291cmNlUm9vdCI6Ii4vc3JjLyIsInNvdXJjZXMiOlsiY2g1LWxpc3QvYW5pbWF0aW9uL2NoNS1hbmltYXRpb24tZmFjdG9yeS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFRQSxPQUFPLEVBQUUsb0JBQW9CLEVBQUUsTUFBTSwwQkFBMEIsQ0FBQztBQUVoRSxNQUFNLE9BQU8sbUJBQW1CO0lBRXhCLFlBQVksQ0FBQyxRQUFnQixFQUFFLFFBQWdCLEVBQUUsT0FBb0I7UUFDM0UsTUFBTSxpQkFBaUIsR0FBaUIsSUFBSSxvQkFBb0IsQ0FBQyxRQUFRLEVBQUUsUUFBUSxFQUFFLE9BQU8sQ0FBQyxDQUFDO1FBQzlGLE9BQU8saUJBQWlCLENBQUM7SUFDMUIsQ0FBQztDQUVEIn0=

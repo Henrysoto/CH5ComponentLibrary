@@ -1,3 +1,0 @@
-export * from './ch5-triggerview-child';
-export * from './ch5-triggerview';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtdHJpZ2dlcnZpZXcvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0EsY0FBYyx5QkFBeUIsQ0FBQztBQUN4QyxjQUFjLG1CQUFtQixDQUFDIn0=

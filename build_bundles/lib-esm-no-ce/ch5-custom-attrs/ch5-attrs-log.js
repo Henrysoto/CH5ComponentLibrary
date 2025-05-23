@@ -1,9 +1,0 @@
-export class Ch5AttrsLog {
-    static info(debug, message, ...optionalParams) {
-        const ts = (new Date()).toISOString();
-        if (debug) {
-            console.info(ts, 'Ch5CustomAttributes', ':', message, optionalParams);
-        }
-    }
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2g1LWF0dHJzLWxvZy5qcyIsInNvdXJjZVJvb3QiOiIuL3NyYy8iLCJzb3VyY2VzIjpbImNoNS1jdXN0b20tYXR0cnMvY2g1LWF0dHJzLWxvZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQSxNQUFNLE9BQU8sV0FBVztJQUViLE1BQU0sQ0FBQyxJQUFJLENBQUMsS0FBYyxFQUFFLE9BQWEsRUFBRSxHQUFHLGNBQXFCO1FBQ3RFLE1BQU0sRUFBRSxHQUFXLENBQUMsSUFBSSxJQUFJLEVBQUUsQ0FBQyxDQUFDLFdBQVcsRUFBRSxDQUFDO1FBQzlDLElBQUksS0FBSyxFQUFFO1lBQ1AsT0FBTyxDQUFDLElBQUksQ0FBQyxFQUFFLEVBQUUscUJBQXFCLEVBQUUsR0FBRyxFQUFFLE9BQU8sRUFBRSxjQUFjLENBQUMsQ0FBQztTQUN6RTtJQUNMLENBQUM7Q0FFSiJ9

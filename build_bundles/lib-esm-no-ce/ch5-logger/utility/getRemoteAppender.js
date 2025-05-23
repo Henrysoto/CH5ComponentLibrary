@@ -1,9 +1,0 @@
-import { AppenderFactory } from '../appender/AppenderFactory';
-import { AppendersEnum } from '../enums/index';
-export function getRemoteAppender(hostname, port, secure) {
-    const appenderFactory = new AppenderFactory();
-    const appenderConfig = { hostname, port, secure };
-    const remoteAppender = appenderFactory.getAppender(AppendersEnum.remote, 0, appenderConfig);
-    return remoteAppender;
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0UmVtb3RlQXBwZW5kZXIuanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtbG9nZ2VyL3V0aWxpdHkvZ2V0UmVtb3RlQXBwZW5kZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0EsT0FBTyxFQUFFLGVBQWUsRUFBRSxNQUFNLDZCQUE2QixDQUFDO0FBQzlELE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxnQkFBZ0IsQ0FBQztBQUsvQyxNQUFNLFVBQVUsaUJBQWlCLENBQUMsUUFBZ0IsRUFBRSxJQUFZLEVBQUUsTUFBZTtJQUU3RSxNQUFNLGVBQWUsR0FBRyxJQUFJLGVBQWUsRUFBRSxDQUFDO0lBQzlDLE1BQU0sY0FBYyxHQUFvQixFQUFDLFFBQVEsRUFBRSxJQUFJLEVBQUUsTUFBTSxFQUFDLENBQUM7SUFDakUsTUFBTSxjQUFjLEdBQUcsZUFBZSxDQUFDLFdBQVcsQ0FBQyxhQUFhLENBQUMsTUFBTSxFQUFFLENBQUMsRUFBRSxjQUFjLENBQW1CLENBQUM7SUFFOUcsT0FBTyxjQUFjLENBQUM7QUFDMUIsQ0FBQyJ9
