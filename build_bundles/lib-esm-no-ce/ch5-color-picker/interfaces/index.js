@@ -1,0 +1,3 @@
+export * from './i-ch5-color-picker-attributes';
+export * from './i-ch5-color-picker-documentation';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtY29sb3ItcGlja2VyL2ludGVyZmFjZXMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsY0FBYyxpQ0FBaUMsQ0FBQztBQUNoRCxjQUFjLG9DQUFvQyxDQUFDIn0=

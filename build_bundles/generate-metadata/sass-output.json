@@ -1,0 +1,122 @@
+{
+  "version": "2.7.0",
+  "themeVersion": "1.0.0",
+  "ch5ElementThemeDefs": {
+    "ch5-animation": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-background": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-button": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-button-list": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-color-chip": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-color-picker": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-datetime": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-dpad": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-form": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-image": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-keypad": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-list": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-label": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-modal-dialog": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-overlay-panel": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-segmented-gauge": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-select": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-signal-level-gauge": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-subpage-reference-list": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-slider": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-spinner": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-tab-button": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-template": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-text": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-textinput": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-toggle": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-triggerview": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-video": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    },
+    "ch5-wifi-signal-level-gauge": {
+      "componentThemeVersion": "1.0.0",
+      "selectors": []
+    }
+  }
+}

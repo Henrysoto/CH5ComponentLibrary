@@ -1,0 +1,4 @@
+export function uriSchemaValidation(uri) {
+    return uri !== '';
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXJpU2NoZW1hVmFsaWRhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIuL3NyYy8iLCJzb3VyY2VzIjpbImNoNS1sb2dnZXIvdXRpbGl0eS91cmlTY2hlbWFWYWxpZGF0aW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9BLE1BQU0sVUFBVSxtQkFBbUIsQ0FBQyxHQUFXO0lBRTNDLE9BQU8sR0FBRyxLQUFLLEVBQUUsQ0FBQztBQUN0QixDQUFDIn0=

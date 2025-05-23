@@ -1,0 +1,2 @@
+export * from "./i-ch5-import-htmlsnippet-attributes";
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtaW1wb3J0LWh0bWxzbmlwcGV0L2ludGVyZmFjZXMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0EsY0FBYyx1Q0FBdUMsQ0FBQyJ9

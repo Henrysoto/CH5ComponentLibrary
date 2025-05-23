@@ -1,0 +1,6 @@
+import { Ch5SignalFactory } from "../ch5-signal-factory";
+export function getSubscriptionsCount() {
+    const signals = Ch5SignalFactory.getInstance().getStates();
+    return signals;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2lnbmFscy5qcyIsInNvdXJjZVJvb3QiOiIuL3NyYy8iLCJzb3VyY2VzIjpbImNoNS1jb3JlL3V0aWxpdHktZnVuY3Rpb25zL3NpZ25hbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0EsT0FBTyxFQUFFLGdCQUFnQixFQUFFLE1BQU0sdUJBQXVCLENBQUM7QUFLekQsTUFBTSxVQUFVLHFCQUFxQjtJQUNqQyxNQUFNLE9BQU8sR0FBRyxnQkFBZ0IsQ0FBQyxXQUFXLEVBQUUsQ0FBQyxTQUFTLEVBQUUsQ0FBQztJQUMzRCxPQUFPLE9BQU8sQ0FBQztBQUNuQixDQUFDIn0=

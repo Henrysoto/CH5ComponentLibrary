@@ -1,0 +1,8 @@
+export class Ch5Uid {
+    static getUid() {
+        return Ch5Uid._prefix + (++Ch5Uid._id);
+    }
+}
+Ch5Uid._id = 0;
+Ch5Uid._prefix = "cr-id-";
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2g1LXVpZC5qcyIsInNvdXJjZVJvb3QiOiIuL3NyYy8iLCJzb3VyY2VzIjpbImNoNS1jb3JlL2NoNS11aWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBVUEsTUFBTSxPQUFPLE1BQU07SUFJUixNQUFNLENBQUMsTUFBTTtRQUNoQixPQUFPLE1BQU0sQ0FBQyxPQUFPLEdBQUcsQ0FBQyxFQUFFLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUMzQyxDQUFDOztBQUxjLFVBQUcsR0FBRyxDQUFDLENBQUM7QUFDUixjQUFPLEdBQUcsUUFBUSxDQUFDIn0=

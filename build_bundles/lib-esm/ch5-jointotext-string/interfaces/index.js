@@ -1,0 +1,3 @@
+export * from './i-ch5-jointotext-string-attributes';
+export * from './i-ch5-jointotext-string-documentation';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtam9pbnRvdGV4dC1zdHJpbmcvaW50ZXJmYWNlcy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjLHNDQUFzQyxDQUFDO0FBQ3JELGNBQWMseUNBQXlDLENBQUMifQ==

@@ -1,0 +1,13 @@
+import { NumericFormat } from "./numeric-format";
+export class UnsignedFormat extends NumericFormat {
+    format(value, options) {
+        const { length } = options;
+        if (isNaN(value)) {
+            return "".padStart(length, "0");
+        }
+        value = Math.abs(value);
+        value = value > 65535 ? 65535 : value;
+        return value.toString().padStart(length, "0");
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidW5zaWduZWQtZm9ybWF0LmpzIiwic291cmNlUm9vdCI6Ii4vc3JjLyIsInNvdXJjZXMiOlsiY2g1LWpvaW50b3RleHQtbnVtZXJpYy9mb3JtYXQvdW5zaWduZWQtZm9ybWF0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxrQkFBa0IsQ0FBQztBQU1qRCxNQUFNLE9BQU8sY0FBZSxTQUFRLGFBQWE7SUFFdEMsTUFBTSxDQUFDLEtBQWEsRUFBRSxPQUE4QjtRQUN2RCxNQUFNLEVBQUUsTUFBTSxFQUFFLEdBQUcsT0FBTyxDQUFDO1FBQzNCLElBQUksS0FBSyxDQUFDLEtBQUssQ0FBQyxFQUFDO1lBQ2IsT0FBTyxFQUFFLENBQUMsUUFBUSxDQUFDLE1BQU0sRUFBQyxHQUFHLENBQUMsQ0FBQztTQUNuQztRQUNELEtBQUssR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ3hCLEtBQUssR0FBRyxLQUFLLEdBQUcsS0FBSyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLEtBQUssQ0FBQztRQUVyQyxPQUFPLEtBQUssQ0FBQyxRQUFRLEVBQUUsQ0FBQyxRQUFRLENBQUMsTUFBTSxFQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ2pELENBQUM7Q0FFSiJ9

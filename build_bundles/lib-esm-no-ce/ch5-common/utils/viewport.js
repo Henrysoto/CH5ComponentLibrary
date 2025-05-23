@@ -1,0 +1,83 @@
+import { AddInitialTick } from './tick';
+import { Ch5Common } from "../../ch5-common/ch5-common";
+const vhElem = addHeightElement();
+let initialised = false;
+let width = window.innerWidth;
+let heightCollapsedControls = vhElem.offsetHeight;
+let height = window.innerHeight;
+let scrollX = window.pageXOffset;
+let scrollY = window.pageYOffset;
+let resized = false;
+let scrolled = false;
+let previousWidth = width;
+let previousHeight = heightCollapsedControls;
+let previousScrollX = scrollX;
+let previousScrollY = scrollY;
+export function GetViewportDetails() {
+    if (!initialised) {
+        initialised = true;
+        AddInitialTick(setDetails);
+    }
+    return {
+        width,
+        height,
+        heightCollapsedControls,
+        scrollX,
+        scrollY,
+        resized,
+        scrolled,
+    };
+}
+function setDetails() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    heightCollapsedControls = vhElem.offsetHeight;
+    scrollX = window.pageXOffset;
+    scrollY = window.pageYOffset;
+    resized = previousWidth !== width || previousHeight !== height;
+    scrolled = previousScrollX !== scrollX || previousScrollY !== scrollY;
+    previousWidth = width;
+    previousHeight = height;
+    previousScrollX = scrollX;
+    previousScrollY = scrollY;
+}
+function addHeightElement() {
+    const elem = document.createElement('div');
+    elem.style.position = 'fixed';
+    elem.style.height = '100vh';
+    document.documentElement.appendChild(elem);
+    return elem;
+}
+function getAspectRatioWidth(pixelWidth, aRatio) {
+    let pHeight = 0;
+    pHeight = pixelWidth / aRatio.width * aRatio.height;
+    pHeight = parseFloat(pHeight.toFixed(2));
+    return pHeight;
+}
+function getAspectRatioHeight(pixelHeight, aRatio) {
+    let pWidth = 0;
+    pWidth = pixelHeight / aRatio.height * aRatio.width;
+    pWidth = parseFloat(pWidth.toFixed(2));
+    return pWidth;
+}
+function aspectRatioCalculation(ratioWidth, ratioHeight, pixelWidth, pixelHeight) {
+    const pWidth = pixelWidth - (pixelWidth % ratioWidth);
+    const pHeight = pixelHeight - (pixelHeight % ratioHeight);
+    const roundedWidth = pWidth - (pWidth % ratioWidth);
+    const roundedHeight = pHeight - (pHeight % ratioHeight);
+    let pw = roundedWidth;
+    let ph = roundedHeight;
+    const aRatio = { width: ratioWidth, height: ratioHeight };
+    ph = getAspectRatioWidth(roundedWidth, aRatio);
+    if (ph > pHeight) {
+        ph = roundedHeight;
+        pw = getAspectRatioHeight(roundedHeight, aRatio);
+    }
+    return ({ width: pw, height: ph });
+}
+export function getAspectRatio(ratioWidth, ratioHeight, viewPortSize) {
+    const pixelVH = Ch5Common.convertVhUnitsToPx(viewPortSize);
+    const pixelVW = Ch5Common.convertVwUnitsToPx(viewPortSize);
+    return aspectRatioCalculation(ratioWidth, ratioHeight, pixelVW, pixelVH);
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmlld3BvcnQuanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtY29tbW9uL3V0aWxzL3ZpZXdwb3J0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9BLE9BQU8sRUFBRSxjQUFjLEVBQUUsTUFBTSxRQUFRLENBQUM7QUFDeEMsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLDZCQUE2QixDQUFDO0FBY3hELE1BQU0sTUFBTSxHQUFnQixnQkFBZ0IsRUFBRSxDQUFDO0FBRy9DLElBQUksV0FBVyxHQUFZLEtBQUssQ0FBQztBQUNqQyxJQUFJLEtBQUssR0FBVyxNQUFNLENBQUMsVUFBVSxDQUFDO0FBQ3RDLElBQUksdUJBQXVCLEdBQVcsTUFBTSxDQUFDLFlBQVksQ0FBQztBQUMxRCxJQUFJLE1BQU0sR0FBVyxNQUFNLENBQUMsV0FBVyxDQUFDO0FBQ3hDLElBQUksT0FBTyxHQUFXLE1BQU0sQ0FBQyxXQUFXLENBQUM7QUFDekMsSUFBSSxPQUFPLEdBQVcsTUFBTSxDQUFDLFdBQVcsQ0FBQztBQUN6QyxJQUFJLE9BQU8sR0FBWSxLQUFLLENBQUM7QUFDN0IsSUFBSSxRQUFRLEdBQVksS0FBSyxDQUFDO0FBRzlCLElBQUksYUFBYSxHQUFXLEtBQUssQ0FBQztBQUNsQyxJQUFJLGNBQWMsR0FBVyx1QkFBdUIsQ0FBQztBQUNyRCxJQUFJLGVBQWUsR0FBVyxPQUFPLENBQUM7QUFDdEMsSUFBSSxlQUFlLEdBQVcsT0FBTyxDQUFDO0FBR3RDLE1BQU0sVUFBVSxrQkFBa0I7SUFDOUIsSUFBSSxDQUFDLFdBQVcsRUFBRTtRQUNkLFdBQVcsR0FBRyxJQUFJLENBQUM7UUFDbkIsY0FBYyxDQUFDLFVBQVUsQ0FBQyxDQUFDO0tBQzlCO0lBRUQsT0FBTztRQUNILEtBQUs7UUFDTCxNQUFNO1FBQ04sdUJBQXVCO1FBQ3ZCLE9BQU87UUFDUCxPQUFPO1FBQ1AsT0FBTztRQUNQLFFBQVE7S0FDWCxDQUFDO0FBRU4sQ0FBQztBQUdELFNBQVMsVUFBVTtJ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

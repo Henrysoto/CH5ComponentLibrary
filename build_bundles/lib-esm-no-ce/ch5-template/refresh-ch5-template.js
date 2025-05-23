@@ -1,0 +1,6 @@
+import { Subject } from "rxjs";
+export const ch5TemplateSubject = new Subject();
+export const refreshCh5Template = (ch5TemplateId) => {
+    ch5TemplateSubject.next(ch5TemplateId);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVmcmVzaC1jaDUtdGVtcGxhdGUuanMiLCJzb3VyY2VSb290IjoiLi9zcmMvIiwic291cmNlcyI6WyJjaDUtdGVtcGxhdGUvcmVmcmVzaC1jaDUtdGVtcGxhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLE9BQU8sRUFBRSxNQUFNLE1BQU0sQ0FBQztBQUUvQixNQUFNLENBQUMsTUFBTSxrQkFBa0IsR0FBRyxJQUFJLE9BQU8sRUFBVSxDQUFDO0FBRXhELE1BQU0sQ0FBQyxNQUFNLGtCQUFrQixHQUFHLENBQUMsYUFBcUIsRUFBRSxFQUFFO0lBQ3hELGtCQUFrQixDQUFDLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQztBQUMzQyxDQUFDLENBQUEifQ==
